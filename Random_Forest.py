@@ -13,17 +13,12 @@ X = np.array(df['Level']).reshape(-1,1)
 y = np.array(df['Salary'])
 print(y)
 
-## label - encoding 
-## train and test split
-## feature scaling
-
 ## Fitting Random forest to the dataset
 from sklearn.ensemble import RandomForestRegressor
 regressor = RandomForestRegressor(n_estimators=300, criterion='mse', random_state=0) # n_estimator is the number of trees 
 																   		# criterion = 'mse' is mean squared error which is default. So no need to write
 regressor.fit(X, y)
-## ADDING MORE N_ESTIMATOR (TREES) MEANS GREATER THE THE TREES AVAILABLE WHOSE AVERAGE ARE TAKEN FOR A PARTICULAR PREDICTION.
-## HAVING LARGE TREES IS NOT ALWAYS GOOD. N_ESTIMATOR CAN HAVE GOOD SCORE WITH 300 TREES RATHER THAN 1000 TREES.
+## N_ESTIMATOR CAN HAVE GOOD SCORE WITH 300 TREES RATHER THAN 1000 TREES.
 
 ## predicting the new result
 y_pred = regressor.predict(6.5)
