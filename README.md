@@ -9,4 +9,4 @@ HyperParameter Selection
 HyperParameter Selection
 - n_estimators = **'300'**
 - Criterion = **'mse'** - _Mean Squared Error_ 
-<img src="Random_Trees.png" width="300" alt="final_image">
+<img src="Random_Trees.png" width="500" alt="final_image">
